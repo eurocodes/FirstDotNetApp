@@ -8,16 +8,17 @@ namespace FirstDotNetApp
         static void Main(string[] args)
         {
             String message = "Press any key to continue";
-            Int32[] values;
-            values = new Int32[3];
+            
+            Tutorial pTutor = new Tutorial();
 
-            values[0] = 1;
-            values[1] = 2;
-            values[2] = 3;
+            pTutor.SetTutorial(1, ".Net");
+            Console.WriteLine(pTutor.GetTutorial());
 
-            Console.WriteLine(values[0]);
-            Console.WriteLine(values[1]);
-            Console.WriteLine(values[2]);
+            pTutor.SetTutorial(2, "C#");
+            Console.WriteLine(pTutor.GetTutorial());
+
+            pTutor.SetTutorial(3, "VB.Net");
+            Console.WriteLine(pTutor.GetTutorial());
 
             Console.WriteLine(message);
             Console.ReadKey();
