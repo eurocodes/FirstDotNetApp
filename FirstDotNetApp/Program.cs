@@ -10,14 +10,6 @@ namespace FirstDotNetApp
             String message = "Press any key to continue";
             
             Tutorial pTutor = new Tutorial();
-
-            pTutor.SetTutorial(1, ".Net");
-            Console.WriteLine(pTutor.GetTutorial());
-
-            pTutor.SetTutorial(2, "C#");
-            Console.WriteLine(pTutor.GetTutorial());
-
-            pTutor.SetTutorial(3, "VB.Net");
             Console.WriteLine(pTutor.GetTutorial());
 
             Console.WriteLine(message);
