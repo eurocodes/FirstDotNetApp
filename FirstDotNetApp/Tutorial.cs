@@ -8,7 +8,12 @@ namespace FirstDotNetApp
     {
         int TutorialID;
         string TutorialName;
-
+        
+        public Tutorial()
+        {
+            TutorialID = 0;
+            TutorialName = "Default";
+        }
         public void SetTutorial(int pID, string pName)
         {
             TutorialID = pID;
